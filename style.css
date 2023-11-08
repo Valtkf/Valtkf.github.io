@@ -1,0 +1,163 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  margin: 0;
+  background-color: rgb(242, 219, 12);
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 80px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 1.5em;
+}
+
+.social-media li {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+li {
+  color: white;
+  list-style-type: none;
+  padding: 0 1.2em;
+}
+
+.logo {
+  order: 0;
+  position: absolute;
+  left: 40px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.photo-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me {
+  margin-top: 30px;
+}
+
+.name,
+.about-me {
+  text-align: center;
+}
+
+.social-media img {
+  width: 50px;
+  height: 50px;
+}
+
+.career {
+  display: flex;
+  padding: 38px 0;
+  justify-content: space-around;
+}
+
+.programming-skills {
+  margin: 100px 0;
+  padding: 38px 0;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.project-image {
+  margin: 30px 40px;
+}
+
+.project-image img {
+  width: 260px;
+  height: 260px;
+}
+
+.project-image figcaption {
+  text-align: center;
+}
+
+.projects {
+  margin: 153px 0 0;
+  padding: 38px 0 0;
+  background-color: rgba(21, 189, 35, 0.234);
+}
+
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+h2,
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+section {
+  display: block;
+}
+
+.created-by {
+  padding: 19px 28px 19px 0;
+}
+
+footer {
+  text-align: right;
+  margin-top: -153px 0px 0px;
+  background-color: rgb(242, 219, 12);
+  height: 55px;
+}

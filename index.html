@@ -2,25 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" async></script>
     <title>Val Portfolio Full-Stack</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul class="menu">
-          <li class="logo">
-            <img src="images/travail-en-ligne.png" alt="logo" />
-          </li>
-          <li>Home</li>
-          <li>About</li>
-          <li>Portfolio</li>
-          <li>Contact</li>
+    <nav class="navbar">
+      <img src="images/travail-en-ligne.png" alt="logo" class="logo" />
+      <div class="nav-links">
+        <ul>
+          <li class="active"><a href="#about-me">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
-    </header>
+      </div>
+      <img
+        src="images/menu-burger.png"
+        alt="menu hamburger"
+        class="menu-hamburger"
+      />
+    </nav>
     <main>
       <section id="about-me" class="presentation">
         <div class="photo-name">
@@ -32,21 +36,15 @@
             </div>
           </div>
           <div class="social-media">
-            <ul>
-              <li>
-                <a href="https://fr.linkedin.com/"
-                  ><img src="images/linkedin.png" alt="logo linkedin"
-                /></a>
-              </li>
-              <li>
-                <a href="https://github.com/"
-                  ><img src="images/github.png" alt="logo github"
-                /></a>
-              </li>
-              <li>
-                <a href=""><img src="images/e-mail.png" alt="logo e-mail" /></a>
-              </li>
-            </ul>
+            <a href="https://fr.linkedin.com/"
+              ><img src="images/linkedin.png" alt="logo linkedin"
+            /></a>
+
+            <a href="https://github.com/"
+              ><img src="images/github.png" alt="logo github"
+            /></a>
+
+            <a href=""><img src="images/e-mail.png" alt="logo e-mail" /></a>
           </div>
         </div>
         <div class="about-me">
@@ -132,6 +130,6 @@
         <p>Created by Valentin Gregorio</p>
       </div>
     </footer>
-    <script src="vanilla-tilt.js"></script>
+    <script src="vanilla-tilt.js" async></script>
   </body>
 </html>

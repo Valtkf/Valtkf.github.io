@@ -1,5 +1,5 @@
+/* Reset CSS */
 * {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,194 +8,18 @@
   list-style: none;
 }
 
-.social-media a {
-  display: inline-flex;
-  justify-content: space-between;
-  padding: 0 1rem;
-}
-
-.photo-name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.presentation {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-
-#about-me {
-  margin-top: 100px;
-}
-
-.about-me {
-  background-color: rgba(21, 189, 35, 0.234);
-  margin: 100px 0px 0px;
-  width: 100%;
-}
-
-.name,
-.about-me {
-  text-align: center;
-}
-
-.social-media img {
-  width: 50px;
-  height: 50px;
-}
-
-.social-media {
-  margin: 22px 0;
-}
-
-.career {
-  display: flex;
-  padding: 38px 0;
-  justify-content: space-around;
-}
-
-.programming-skills {
-  margin: 100px 0;
-  padding: 38px 0;
-  text-align: center;
-}
-
-.skills-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.project-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.project-image {
-  margin: 30px 40px;
-}
-
-.project-image img {
-  width: 260px;
-  height: 260px;
-}
-
-.project-image figcaption {
-  text-align: center;
-}
-
-.projects {
-  margin: 153px 0 0;
-  padding: 38px 0 0;
-  background-color: rgba(21, 189, 35, 0.234);
-}
-
-figure {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-}
-
-h2,
-h1 {
-  text-align: center;
-  margin: 30px 0;
-}
-
-h2 {
-  font-size: 22px;
-}
-
-h1 {
-  font-size: 42px;
-}
-
-p {
-  font-size: 19px;
-}
-
-img {
-  width: 80px;
-  height: 80px;
-}
-
-section {
-  display: block;
-}
-
-.created-by {
-  padding: 19px 28px 19px 0;
-}
-
-.project-container figcaption {
-  font-size: 19px;
-}
-
-footer {
-  text-align: right;
-  margin-top: -153px 0px 0px;
-  background-color: rgba(242, 219, 12, 0.749);
-  height: 55px;
-}
-
-/* navbar burger-menu (mode mobile) */
-
+/* Body Styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Header Styles */
 header {
   height: 100vh;
   width: 100vw;
 }
 
-/* hover effect text */
-a {
-  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-a:before {
-  content: "";
-  background: #54b3d6;
-  display: block;
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  transition: all 0.3s ease-in-out;
-}
-
-a:hover {
-  background-position: 0;
-}
-
-a:hover::before {
-  width: 100%;
-}
-/* hover effect text */
-
+/* Navigation Styles */
 .navbar {
   position: relative;
   padding: 20px;
@@ -238,6 +62,7 @@ a:hover::before {
   width: 80px;
 }
 
+/* Mobile Navigation Styles */
 @media screen and (max-width: 900px) {
   .navbar {
     padding: 60px;
@@ -246,16 +71,20 @@ a:hover::before {
   .menu-hamburger {
     width: 80px;
     height: 80px;
+    z-index: 1004;
   }
+
   .navbar .logo {
     position: absolute;
     top: 30px;
     left: 50px;
   }
+
   .navbar .menu-hamburger {
     top: 30px;
     display: block;
   }
+
   .nav-links {
     top: 0;
     left: 0;
@@ -269,6 +98,7 @@ a:hover::before {
     align-items: center;
     margin-left: 100%;
     transition: all 0.5s ease;
+    z-index: 1004;
   }
 
   .nav-links.mobile-menu {
@@ -280,9 +110,195 @@ a:hover::before {
     flex-direction: column;
     align-items: center;
   }
+
   .navbar .nav-links ul li {
     margin: 25px 0;
     font-size: 1.5em;
   }
 }
-/* navbar burger-menu (mode mobile) */
+
+/* Social Media Styles */
+.social-media {
+  margin: 22px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.social-media img {
+  width: 50px;
+  height: 50px;
+}
+
+/* About Me Styles */
+#about-me {
+  margin-top: 100px;
+}
+
+.about-me {
+  background-color: rgba(21, 189, 35, 0.234);
+  margin: 100px 0px 0px;
+  width: 100%;
+}
+
+.name,
+.about-me {
+  text-align: center;
+}
+
+/* Presentation Styles */
+.presentation {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Career Styles */
+.career {
+  display: flex;
+  padding: 38px 0;
+  justify-content: space-around;
+}
+
+/* Programming Skills Styles */
+.programming-skills {
+  margin: 100px 0;
+  padding: 38px 0;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Project Styles */
+.projects {
+  margin: 153px 0 0;
+  padding: 38px 0 0;
+  background-color: rgba(21, 189, 35, 0.234);
+}
+
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.project-image {
+  margin: 30px 40px;
+}
+
+.project-image img {
+  width: 260px;
+  height: 260px;
+}
+
+.project-image figcaption {
+  text-align: center;
+}
+
+/* Figure Styles */
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+/* Heading Styles */
+h1,
+h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 19px;
+}
+
+/* Image Styles */
+img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Section Styles */
+section {
+  display: block;
+}
+
+/* Created By Styles */
+.created-by {
+  padding: 19px 28px 19px 0;
+}
+
+/* Project Container Figcaption Styles */
+.project-container figcaption {
+  font-size: 19px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: right;
+  margin-top: -153px 0px 0px;
+  background-color: rgba(242, 219, 12, 0.749);
+  height: 55px;
+}
+
+/* Hover Effect Text Styles */
+a {
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+a:before {
+  content: "";
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background-position: 0;
+}
+
+a:hover::before {
+  width: 100%;
+}

@@ -105,6 +105,8 @@ form {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
+  height: 500px;
+  width: 600px;
 }
 
 .footer-form {
@@ -125,4 +127,10 @@ form .body-form {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
+}
+
+form .body-form .group {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }

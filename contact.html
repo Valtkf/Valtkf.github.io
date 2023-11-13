@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form-style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -13,38 +13,53 @@
     />
     <title>Contact</title>
   </head>
+  <header>
+    <nav class="navbar">
+      <img src="images/travail-en-ligne.png" alt="logo" class="logo" />
+      <div class="nav-links">
+        <ul>
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
   <body>
-    <form>
-      <h1>Contact me</h1>
-      <div class="separation"></div>
-      <div class="body-form">
-        <div class="left">
-          <div class="box">
-            <label>Name</label>
-            <input type="text" />
-            <i class="fa-solid fa-user"></i>
+    <main>
+      <form>
+        <h1>Contact me</h1>
+        <div class="separation"></div>
+        <div class="body-form">
+          <div class="left">
+            <div class="box">
+              <label>Name</label>
+              <input type="text" />
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="box">
+              <label>E-mail</label>
+              <input type="text" />
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="box">
+              <label>Phone number</label>
+              <input type="text" />
+              <i class="fa-solid fa-mobile"></i>
+            </div>
           </div>
-          <div class="box">
-            <label>E-mail</label>
-            <input type="text" />
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="box">
-            <label>Phone number</label>
-            <input type="text" />
-            <i class="fa-solid fa-mobile"></i>
+          <div class="right">
+            <div class="group">
+              <label>Message</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
           </div>
         </div>
-        <div class="right">
-          <div class="group">
-            <label>Message</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
+        <div class="footer-form">
+          <button>Submit</button>
         </div>
-      </div>
-      <div class="footer-form">
-        <button>Submit</button>
-      </div>
-    </form>
+      </form>
+    </main>
   </body>
 </html>

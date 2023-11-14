@@ -2,7 +2,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   color: rgb(81, 68, 95);
   text-decoration: none;
   list-style: none;
@@ -22,6 +21,10 @@ body {
 img {
   width: 80px;
   height: 80px;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 /* hover effect text */
@@ -102,19 +105,16 @@ main {
 }
 
 form {
-  background-color: white;
+  margin-top: 20px;
   padding: 30px;
+  display: block;
+  background-color: white;
   border-radius: 10px;
-  height: 500px;
-  width: 600px;
+  font-size: 20px;
 }
 
 .footer-form {
   text-align: center;
-}
-
-form {
-  font-size: 25px;
 }
 
 form .separation {
@@ -126,11 +126,86 @@ form .separation {
 form .body-form {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 form .body-form .group {
+  position: relative;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+}
+
+form .body-form .left .group input {
+  margin-top: 5px;
+  padding: 10px 5px 10px 40px;
+  border: 1px solid #c9c9c9;
+  outline-color: #747cdf;
+  border-radius: 5px;
+}
+
+form .body-form .left .group i {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  padding: 14px 9px;
+  color: #747cdf;
+}
+
+form .body-form .right {
+  margin-left: 40px;
+}
+
+form .body-form .right .group {
+  height: 100%;
+}
+
+form .body-form .right .group textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 2px solid #747cdf;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 81%;
+}
+
+form .footer-form button {
+  margin-top: 10px;
+  width: 120px;
+  height: 50px;
+  background-color: #747cdf;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+form .footer-form button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 920px) {
+  .body-form {
+    display: flex;
+    flex-wrap: wrap; /* Ajuster l'alignement des éléments enfants */
+  }
+
+  .body-form .left,
+  .body-form .right {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navbar {
+    height: 60px;
+  }
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
 }

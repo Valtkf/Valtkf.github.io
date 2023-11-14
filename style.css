@@ -143,6 +143,7 @@ header {
 .about-me {
   background-color: rgba(21, 189, 35, 0.234);
   margin: 100px 0px 0px;
+  padding: 10px;
   width: 100%;
 }
 
@@ -234,6 +235,10 @@ h2 {
 
 h1 {
   font-size: 42px;
+}
+
+h3 {
+  margin: 10px 10px 20px 10px;
 }
 
 /* Paragraph Styles */
